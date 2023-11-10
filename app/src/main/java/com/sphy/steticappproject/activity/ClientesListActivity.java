@@ -14,7 +14,7 @@ import androidx.room.Room;
 import com.sphy.steticappproject.adapter.ClienteAdapter;
 import com.sphy.steticappproject.domain.Cliente;
 import com.sphy.steticappproject.R;
-
+import com.sphy.steticappproject.db.ClienteDao;
 import com.sphy.steticappproject.db.AppDatabase;
 
 

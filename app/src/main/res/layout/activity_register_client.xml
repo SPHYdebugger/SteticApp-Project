@@ -21,7 +21,8 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/name"
-            android:inputType="text" />
+            android:inputType="text"
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/client_lastname"
@@ -29,7 +30,8 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/description"
-            android:inputType="text" />
+            android:inputType="text"
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/client_DNI"
@@ -37,7 +39,8 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="DNI"
-            android:inputType="text" />
+            android:inputType="text"
+            android:minHeight="48dp" />
 
     </LinearLayout>
 

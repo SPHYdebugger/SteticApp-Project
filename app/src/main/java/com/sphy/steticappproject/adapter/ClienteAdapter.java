@@ -19,15 +19,15 @@ public class ClienteAdapter extends RecyclerView.Adapter<ClienteAdapter.clienteH
 
     private List<Cliente> clientes;
 
-    public ClienteAdapter(List<Cliente> cliente) {
-        this.clientes = cliente;
+    public ClienteAdapter(List<Cliente> clientes) {
+        this.clientes = clientes;
     }
 
     @NonNull
     @Override
     public clienteHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.task_client_item, parent, false);
+                .inflate(R.layout.list_client_item, parent, false);
         return new clienteHolder(view);
     }
 
