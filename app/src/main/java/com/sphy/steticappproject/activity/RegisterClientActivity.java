@@ -29,7 +29,7 @@ public class RegisterClientActivity extends AppCompatActivity {
 
         String clientName = etName.getText().toString();
         String clientLastname = etDescription.getText().toString();
-        String clientDNI = etDescription.getText().toString();
+        String clientDNI = etDNI.getText().toString();
 
         Cliente cliente = new Cliente(clientName, clientLastname, clientDNI);
         AppDatabase db = Room.databaseBuilder(this, AppDatabase.class, DATABASE_NAME).allowMainThreadQueries().build();
