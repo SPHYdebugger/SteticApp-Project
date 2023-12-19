@@ -4,8 +4,11 @@ import static com.sphy.steticappproject.util.Constants.DATABASE_NAME;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -14,7 +17,7 @@ import androidx.room.Room;
 import com.sphy.steticappproject.adapter.ClienteAdapter;
 import com.sphy.steticappproject.domain.Cliente;
 import com.sphy.steticappproject.R;
-
+import com.sphy.steticappproject.db.ClienteDao;
 import com.sphy.steticappproject.db.AppDatabase;
 
 
@@ -58,5 +61,27 @@ public class ClientesListActivity extends AppCompatActivity {
     public void addCliente(View view) {
         Intent intent = new Intent(this, RegisterClientActivity.class);
         startActivity(intent);
+    }
+    public void addCliente(MenuItem item) {
+        Intent intent = new Intent(this, RegisterClientActivity.class);
+        startActivity(intent);
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.action_bar, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == R.id.action_addClient){
+            Intent intent = new Intent(this, RegisterClientActivity.class);
+            startActivity(intent);
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }

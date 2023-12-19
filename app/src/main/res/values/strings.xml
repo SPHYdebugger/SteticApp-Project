@@ -3,8 +3,9 @@
     <string name="name">Nombre</string>
     <string name="description">Apellidos</string>
     <string name="create">Crear</string>
-    <string name="pending">Borrar</string>
+    <string name="delete">Borrar</string>
     <string name="details">Detalles</string>
-    <string name="urgent">Urgente</string>
-    <string name="tarea_insertada">Tarea insertada</string>
+    <string name="client_added">Cliente insertado</string>
+    <string name="item_menu" />
+    <string name="search">Search</string>
 </resources>

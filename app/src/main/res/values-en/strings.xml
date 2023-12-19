@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">SteticApp</string>
-    <string name="name">Nombre</string>
-    <string name="description">Apellidos</string>
-    <string name="create">Crear</string>
-    <string name="pending">Delete</string>
-    <string name="details">Detalles</string>
-    <string name="urgent">Urgente</string>
-    <string name="tarea_insertada">Tarea insertada</string>
+    <string name="name">Name</string>
+    <string name="description">Lastname</string>
+    <string name="create">Create</string>
+    <string name="delete">Delete</string>
+    <string name="details">Details</string>
+    <string name="client_added">Client added</string>
 </resources>
